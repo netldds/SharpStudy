@@ -7,7 +7,5 @@ D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Release\ConsoleTestV1.exe.
 D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Release\ConsoleTestV1.application
 D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Release\ConsoleTestV1.exe
 D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Release\ConsoleTestV1.pdb
-D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Release\ConsoleTestV1.csprojResolveAssemblyReference.cache
-D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\bin\Release\OpenTK.dll
-D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\bin\Release\OpenTK.pdb
-D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\bin\Release\OpenTK.xml
+D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\bin\Release\ConsoleTestV1.exe.CodeAnalysisLog.xml
+D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\bin\Release\ConsoleTestV1.exe.lastcodeanalysissucceeded

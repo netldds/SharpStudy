@@ -11,10 +11,10 @@ namespace MyConsole
     /// </summary>
     [AttributeUsage(AttributeTargets.Struct |
         AttributeTargets.Class,
-        AllowMultiple =true)]
+        AllowMultiple =false)]
     class Author : Attribute
     {
-        private string Name;
+        public string Name;
         public double Version;
         public Author(string name)
         {
