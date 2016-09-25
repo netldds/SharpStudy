@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Reflection;
 using Microsoft.Win32;
-
+using System.IO;
 namespace MyConsole
 {
     class Enter
     {
-        private static int count = 0;
         static void Main(string[] args)
         {
-            Console.WriteLine(FXVersionInRegistry.GetFXVersion());
+            Console.WriteLine("当前FX版本:"+FXVersionInRegistry.GetFXVersion());
+            //FileIO.FIleMSDN();
+            Console.WriteLine(Path.Combine(@"D:\abc", "data.chunk"));
             Console.ReadKey();
         }
     }
