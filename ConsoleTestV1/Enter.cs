@@ -14,9 +14,16 @@ namespace MyConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("当前FX版本:"+FXVersionInRegistry.GetFXVersion());
+            Console.WriteLine("当前FX版本:" + FXVersionInRegistry.GetFXVersion());
             //FileIO.FIleMSDN();
-            Console.WriteLine(Path.Combine(@"D:\abc", "data.chunk"));
+            //FileIO.DirectoryDO();
+            //MyIO.StaticFileMethod(FileEnum.Read);
+            DateTime bd = DateTime.Now;
+            MyBufferedStream.StreamRead();
+            //MyIO.DOread();
+            DateTime ed = DateTime.Now;
+            Console.WriteLine($"耗时{ed.Subtract(bd).TotalMilliseconds}ms");
+            Console.WriteLine("Done");
             Console.ReadKey();
         }
     }

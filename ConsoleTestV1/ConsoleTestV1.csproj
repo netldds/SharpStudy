@@ -86,7 +86,7 @@
     <Compile Include="Enter.cs" />
     <Compile Include="EventClass.cs" />
     <Compile Include="ExtendClass.cs" />
-    <Compile Include="FileIO.cs" />
+    <Compile Include="MyIO.cs" />
     <Compile Include="FXVersionInRegistry.cs" />
     <Compile Include="GenericsMethod.cs" />
     <Compile Include="ImlicitClass.cs" />
