@@ -10,9 +10,10 @@ namespace MyConsole
     /// 自定义特性
     /// </summary>
     [AttributeUsage(AttributeTargets.Struct |
-        AttributeTargets.Class,
-        AllowMultiple =false)]
-    class Author : Attribute
+        AttributeTargets.Class |
+        AttributeTargets.Method,
+        AllowMultiple = false)]
+    public class Author : Attribute
     {
         public string Name;
         public double Version;
@@ -22,13 +23,27 @@ namespace MyConsole
             Version = 1.0;
         }
     }
-    [Author("zhangliu",Version =1.1f)]
+    [AttributeUsage(AttributeTargets.All)]
+    public class RefDll:Attribute
+    {
+        public RefDll()
+        {
+
+        }
+    }
+    //[Author("zhangliu", Version = 1.1f)]
     class FunctionInherited
     {
+
         public FunctionInherited()
         {
             Console.WriteLine("1");
-            
+
+        }
+        [Author("Dos", Version = 1.1f)]
+        public void  Dos()
+        {
+            Console.WriteLine("DO");
         }
     }
 }

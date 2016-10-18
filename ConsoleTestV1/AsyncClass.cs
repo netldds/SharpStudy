@@ -4,11 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Net.Http;
 
 namespace MyConsole
 {
     class AsyncClass
     {
+        /// <summary>
+        /// 这是一个异步方法，调用此方法的方法必须也要加Async Await
+        /// </summary>
+        /// <returns></returns>
+        public async Task<int> AccessTheWebAsync()
+        {
+            Func<Task<int>> taskFunc = () =>
+            {
+                return Task.Run<int>(() =>
+                {
+                    Console.WriteLine("我自己的异步方法");
+                    return 0;
+                });
+            };
+            int i = await taskFunc();
+            await Task.Delay(5000);
+            return i;
+
+        }
         /// <summary>
         /// 异步调用方法,Async,Await
         /// </summary>
