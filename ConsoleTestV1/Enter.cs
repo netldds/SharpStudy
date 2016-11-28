@@ -9,29 +9,45 @@ using System.Reflection;
 using Microsoft.Win32;
 using System.IO;
 using System.Net.Http;
+using System.Windows.Forms;
 namespace MyConsole
 {
     class Enter
     {
+        public static string[] str
+        {
+            set;
+            get;
+        } = { "a", "b", "c", "d" };
+        [STAThread]
         static void Main(string[] args)
         {
             Console.WriteLine("当前FX版本:" + FXVersionInRegistry.GetFXVersion());
             DateTime bd = DateTime.Now;
 
+
+            Algorithm alg = new Algorithm(Algorithm.Agtypes.InsertSort);
+
+            DateTime ed = DateTime.Now;
+            Console.WriteLine($"\n耗时{ed.Subtract(bd).TotalMilliseconds}ms");
+            //Console.WriteLine("Done");
+            Console.ReadKey();
+            //Application.Run(new MyConsole.MyForm.Main());
+        }
+        /// <summary>
+        /// 启动符合特性的未知方法
+        /// </summary>
+        static void ActiveNoneNameMethodWihtAttribute()
+        {
+
             FunctionInherited fc = new FunctionInherited();
 
             MethodInfo minfo = FindMethodWithAttribute(typeof(Author), fc.GetType());
-            if(minfo!=null)
+            if (minfo != null)
             {
                 Console.WriteLine("Author");
                 minfo.Invoke(fc, null);
             }
-
-
-            DateTime ed = DateTime.Now;
-            Console.WriteLine($"耗时{ed.Subtract(bd).TotalMilliseconds}ms");
-            //Console.WriteLine("Done");
-            Console.ReadKey();
         }
         /// <summary>
         /// 查找未知实例方法有无指定特性
@@ -52,6 +68,9 @@ namespace MyConsole
             }
             return null;
         }
+        /// <summary>
+        /// 调用异步方法
+        /// </summary>
         static async void dost()
         {
             AsyncClass ac = new AsyncClass();
@@ -63,6 +82,9 @@ namespace MyConsole
             });
             Console.Write(st);
         }
+        /// <summary>
+        /// 获取DLL文件查找对应特性方法并实例化
+        /// </summary>
         public void GetDllFile()
         {
             Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);

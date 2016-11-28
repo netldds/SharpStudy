@@ -67,10 +67,14 @@
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -79,6 +83,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithm.cs" />
     <Compile Include="AsyncClass.cs" />
     <Compile Include="AttributesClass.cs" />
     <Compile Include="DelegateClass.cs" />
@@ -86,6 +91,12 @@
     <Compile Include="Enter.cs" />
     <Compile Include="EventClass.cs" />
     <Compile Include="ExtendClass.cs" />
+    <Compile Include="MyForm\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyIO.cs" />
     <Compile Include="FXVersionInRegistry.cs" />
     <Compile Include="GenericsMethod.cs" />
@@ -114,6 +125,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyForm\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

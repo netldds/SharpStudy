@@ -5,5 +5,3 @@ D:\MySharpTestProject\ConsoleTestV1\ClassLibrary1\bin\Release\ConsoleTestV1.pdb
 D:\MySharpTestProject\ConsoleTestV1\ClassLibrary1\obj\Release\ClassLibrary1.csprojResolveAssemblyReference.cache
 D:\MySharpTestProject\ConsoleTestV1\ClassLibrary1\obj\Release\ClassLibrary1.dll
 D:\MySharpTestProject\ConsoleTestV1\ClassLibrary1\obj\Release\ClassLibrary1.pdb
-D:\MySharpTestProject\ConsoleTestV1\ClassLibrary1\bin\Release\ClassLibrary1.dll.CodeAnalysisLog.xml
-D:\MySharpTestProject\ConsoleTestV1\ClassLibrary1\bin\Release\ClassLibrary1.dll.lastcodeanalysissucceeded
