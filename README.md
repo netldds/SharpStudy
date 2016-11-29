@@ -2,5 +2,5 @@
 My C# Study Homework...
 ##目前最新进度
 快速排序，插入排序等算法
-![iamge](http://git.oschina.net/ldds/SharpStudy/raw/master/QQ%E6%88%AA%E5%9B%BE20160811022951.png?dir=0&filepath=QQ%E6%88%AA%E5%9B%BE20160811022951.png&oid=229bd6533f290316027c0dafd9f1f7dac51f55d5&sha=d53875ef8d667ce09171cf937dd392a2d4cb43d0)
+![iamge](http://git.oschina.net/ldds/SharpStudy/blob/master/SS.jpg?dir=0&filepath=SS.jpg&oid=65bfeb01ddd1c092dc6e87d11abe3a7297e924b2&sha=425788435e9916c87d818327c50359a10471a726)
 In Home Test Push.
