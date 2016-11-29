@@ -48,14 +48,53 @@ namespace MyConsole
 
         private void QicukSortFunc()
         {
+            int[] aryT = new int[ary.Length];
+            for (int x = 0; x < aryT.Length; x++)
+            {
+                aryT[x] = ary[x];
+            }
+            QuickSortSort(aryT, 0, aryT.Length-1);
+            PrintfArray(aryT,"快速排序演算");
+        }
 
+        private void QuickSortSort(int[] aryT, int v1, int v2)
+        {
+            if(v1<v2)
+            {
+                int i = QuickAlgorithm(aryT, v1, v2);
+                QuickSortSort(aryT, v1, i - 1);
+                QuickSortSort(aryT, i + 1, v2);
+            }
+        }
+
+        private int QuickAlgorithm(int[] aryT, int v, int length)
+        {
+            int i = v, j = length, x = aryT[i];
+            while(i<j)
+            {
+                while (i < j && aryT[j] >= x)
+                    j--;
+                if(i<j)
+                {
+                    aryT[i] = aryT[j];
+                    i++;
+                }
+                while (i < j && aryT[i] < x)
+                    i++;
+                if(i<j)
+                {
+                    aryT[j] = aryT[i];
+                    j--;
+                }
+            }
+            aryT[i] = x;
+            return i;
         }
 
         private void InsertSortFunc()
         {
-            Console.WriteLine("插入排序演算");
             int[] aryT = new int[ary.Length];
-            for(int x=0;x<aryT.Length;x++)
+            for (int x = 0; x < aryT.Length; x++)
             {
                 aryT[x] = ary[x];
             }
@@ -72,11 +111,12 @@ namespace MyConsole
                 }
                 aryT[j + 1] = t;
             }
-            PrintfArray(aryT);
+            PrintfArray(aryT,"插入排序演算");
         }
-        private void PrintfArray(int[] resultary)
+        private void PrintfArray(int[] resultary,string str)
         {
-            Console.Write("随机数字序列： ");
+            Console.WriteLine(str);
+            Console.Write("原始数列: ");
             foreach (var i in ary)
             {
                 Console.Write(i + " ");

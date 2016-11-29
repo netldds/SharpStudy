@@ -26,14 +26,15 @@ namespace MyConsole
             DateTime bd = DateTime.Now;
 
 
-            Algorithm alg = new Algorithm(Algorithm.Agtypes.InsertSort);
+            new Algorithm(Algorithm.Agtypes.InsertSort);
 
             DateTime ed = DateTime.Now;
             Console.WriteLine($"\n耗时{ed.Subtract(bd).TotalMilliseconds}ms");
-            //Console.WriteLine("Done");
             Console.ReadKey();
+
             //Application.Run(new MyConsole.MyForm.Main());
         }
+
         /// <summary>
         /// 启动符合特性的未知方法
         /// </summary>
@@ -55,12 +56,12 @@ namespace MyConsole
         /// <param name="t"></param>
         /// <param name="obj"></param>
         /// <returns></returns>
-        static MethodInfo FindMethodWithAttribute(Type t,Type obj)
+        static MethodInfo FindMethodWithAttribute(Type t, Type obj)
         {
-            var _obj = obj.GetMethods(BindingFlags.Instance|BindingFlags.Public);
-            foreach(var m in _obj)
+            var _obj = obj.GetMethods(BindingFlags.Instance | BindingFlags.Public);
+            foreach (var m in _obj)
             {
-                if(m.GetCustomAttribute(t)!=null)
+                if (m.GetCustomAttribute(t) != null)
                 {
                     //m.Invoke(obj, null);
                     return m;
