@@ -4,7 +4,5 @@ D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\bin\Debug\ConsoleTestV1.pdb
 D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Debug\ConsoleTestV1.csprojResolveAssemblyReference.cache
 D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Debug\ConsoleTestV1.exe
 D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Debug\ConsoleTestV1.pdb
-D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\bin\Debug\ConsoleTestV1.exe.manifest
-D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\bin\Debug\ConsoleTestV1.application
-D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Debug\ConsoleTestV1.exe.manifest
-D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Debug\ConsoleTestV1.application
+D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Debug\MyConsole.MyForm.Main.resources
+D:\MySharpTestProject\ConsoleTestV1\ConsoleTestV1\obj\Debug\ConsoleTestV1.csproj.GenerateResource.Cache

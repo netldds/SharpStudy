@@ -25,8 +25,7 @@ namespace MyConsole
             Console.WriteLine("当前FX版本:" + FXVersionInRegistry.GetFXVersion());
             DateTime bd = DateTime.Now;
 
-
-            new Algorithm(Algorithm.Agtypes.InsertSort);
+            Application.Run(new MyForm.Main());
 
             DateTime ed = DateTime.Now;
             Console.WriteLine($"\n耗时{ed.Subtract(bd).TotalMilliseconds}ms");
