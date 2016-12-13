@@ -1,0 +1,8 @@
+D:\MySharpTestProject\ConsoleTestV1\MyAngleSharp\bin\Release\MyAngleSharp.exe.config
+D:\MySharpTestProject\ConsoleTestV1\MyAngleSharp\bin\Release\MyAngleSharp.exe
+D:\MySharpTestProject\ConsoleTestV1\MyAngleSharp\bin\Release\MyAngleSharp.pdb
+D:\MySharpTestProject\ConsoleTestV1\MyAngleSharp\bin\Release\AngleSharp.dll
+D:\MySharpTestProject\ConsoleTestV1\MyAngleSharp\bin\Release\AngleSharp.xml
+D:\MySharpTestProject\ConsoleTestV1\MyAngleSharp\obj\Release\MyAngleSharp.csprojResolveAssemblyReference.cache
+D:\MySharpTestProject\ConsoleTestV1\MyAngleSharp\obj\Release\MyAngleSharp.exe
+D:\MySharpTestProject\ConsoleTestV1\MyAngleSharp\obj\Release\MyAngleSharp.pdb
