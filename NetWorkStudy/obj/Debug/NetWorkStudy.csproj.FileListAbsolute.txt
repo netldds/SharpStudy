@@ -1,0 +1,6 @@
+D:\MySharpTestProject\ConsoleTestV1\NetWorkStudy\bin\Debug\NetWorkStudy.exe.config
+D:\MySharpTestProject\ConsoleTestV1\NetWorkStudy\bin\Debug\NetWorkStudy.exe
+D:\MySharpTestProject\ConsoleTestV1\NetWorkStudy\bin\Debug\NetWorkStudy.pdb
+D:\MySharpTestProject\ConsoleTestV1\NetWorkStudy\obj\Debug\NetWorkStudy.exe
+D:\MySharpTestProject\ConsoleTestV1\NetWorkStudy\obj\Debug\NetWorkStudy.pdb
+D:\MySharpTestProject\ConsoleTestV1\NetWorkStudy\obj\Debug\NetWorkStudy.csprojResolveAssemblyReference.cache

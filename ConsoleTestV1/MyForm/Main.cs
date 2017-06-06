@@ -26,9 +26,8 @@ namespace MyConsole.MyForm
         {
             await Task.Delay(10000);
             label1.Text = "Finsh";
-            
-        }
 
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             Thread.Sleep(10000);
